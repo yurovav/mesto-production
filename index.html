@@ -10,7 +10,7 @@
 
   <title>Mesto</title>
 
-  <script type="module" crossorigin src="./assets/index-Don18WxJ.js"></script>
+  <script type="module" crossorigin src="./assets/index-GiptYCHc.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-YhHFJ6WR.css">
 </head>
 
@@ -70,7 +70,8 @@
           <label class="popup__label">
 
             <input type="text" name="user-name" id="user-name" class="popup__input popup__input_type_name"
-              placeholder="Имя" minlength="2" maxlength="40" required />
+              placeholder="Имя" minlength="2" maxlength="40" pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
+              data-error-message="Разрешены только латинские, кириллические буквы, пробелы и дефис" required />
 
             <span class="popup__error" id="user-name-error"></span>
 
@@ -113,7 +114,8 @@
           <label class="popup__label">
 
             <input type="text" name="place-name" id="place-name" class="popup__input popup__input_type_card-name"
-              placeholder="Название" minlength="2" maxlength="30" required />
+              placeholder="Название" minlength="2" maxlength="30" pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
+              data-error-message="Разрешены только латинские, кириллические буквы, пробелы и дефис" required />
 
             <span class="popup__error" id="place-name-error"></span>
 
